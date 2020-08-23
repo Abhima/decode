@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+:root {
+  --fontFamily: Arial, Helvetica, sans-serif;
+  --mainViolet: darkviolet;
+  --mainLightViolet: violet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* In order to add footer at the bottom */
+.page-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  font-family: var(--fontFamily);
+  width: 100%;
+}
+.content-wrap {
+  flex: 1;
+}
+.container {
+  padding-top: 1rem;
+}
+/* For header of each page*/
+.headerTitle {
+  text-align: center;
+}
+/*for react-router-dom Link */
+.link {
+  color: darkviolet;
+}
+.link:hover {
+  color: violet;
+}
+/*for jumbotorn*/
+.jumbotron {
+  background: url("./assets/Images/beach.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+/* for card button of purplecircles.js*/
+.btn-outline-dark {
+  border-color: darkviolet;
+  text-align: center;
+}
+.btn-outline-dark:hover {
+  background-color: violet;
+}
+.content {
+  padding: 1rem;
+}
+.content.imgBg {
+  background-size: cover;
+  background-position: center center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentBlock {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: -10%;
+  background-color: #ffffff;
+  padding: 30px;
+  min-height: auto;
+  width: auto;
+  color: darkviolet;
+  float: left;
 }
