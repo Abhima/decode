@@ -6,7 +6,6 @@ import { PurpleCircles } from "./PurpleCircles";
 import { Squares } from "./Squares";
 import { Triangles } from "./Triangles";
 import { NoMatch } from "./NoMatch";
-import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/NavigationBar";
 import { Breadcrumbs } from "./components/Breadcrumbs";
 import { Footer } from "./components/Footer";
@@ -27,19 +26,17 @@ class App extends Component {
             <div className="content-wrap">
               <NavigationBar />
               <Breadcrumbs />
-              <Layout>
-                <Switch>
-                  <Route exact from="/" component={Teft} />
-                  <Route exact path="/circles" component={Circles} />
-                  <Route exact path="/squares" component={Squares} />
-                  <Route exact path="/triangles" component={Triangles} />
-                  <Route
-                    path="/circles/purplecircles"
-                    component={PurpleCircles}
-                  />
-                  <Route exact component={NoMatch} />
-                </Switch>
-              </Layout>
+              <Switch>
+                <Route exact from="/" component={Teft} />
+                <Route exact path="/circles" component={Circles} />
+                <Route exact path="/squares" component={Squares} />
+                <Route exact path="/triangles" component={Triangles} />
+                <Route
+                  path="/circles/purplecircles"
+                  component={PurpleCircles}
+                />
+                <Route exact component={NoMatch} />
+              </Switch>
             </div>
             <hr />
             <Footer />
@@ -68,6 +65,12 @@ const theme = createMuiTheme({
           fontWeight: "bold",
         },
       },
+      h2: {
+        fontSize: pxToRem(20),
+        [breakpoints.up("xs")]: {
+          fontSize: pxToRem(16),
+        },
+      },
       subtitle1: {
         fontSize: pxToRem(16),
         [breakpoints.up("xs")]: {
@@ -81,11 +84,18 @@ const theme = createMuiTheme({
           fontSize: pxToRem(12),
         },
       },
-      caption: {
+      body2: {
         fontSize: pxToRem(12),
 
         [breakpoints.up("xs")]: {
           fontSize: pxToRem(10),
+        },
+      },
+      caption: {
+        fontSize: pxToRem(10),
+
+        [breakpoints.up("xs")]: {
+          fontSize: pxToRem(8),
         },
       },
     },

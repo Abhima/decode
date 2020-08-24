@@ -5,4 +5,6 @@ export default styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;

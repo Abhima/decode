@@ -4,7 +4,7 @@
   --mainLightViolet: violet;
 }
 
-/* In order to add footer at the bottom */
+/* To stick footer at the bottom of the page*/
 .page-container {
   display: flex;
   flex-direction: column;
@@ -15,6 +15,7 @@
 .content-wrap {
   flex: 1;
 }
+/* for space between div containers*/
 .container {
   padding-top: 1rem;
 }
@@ -38,30 +39,27 @@
   background-size: cover;
   height: 100%;
 }
-/* for card button of purplecircles.js*/
-.btn-outline-dark {
-  border-color: darkviolet;
-  text-align: center;
+/*for Typography Overlay Image in purplecircles.js*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin: 0 auto;
 }
-.btn-outline-dark:hover {
-  background-color: violet;
+.img-fluid,
+.grid-content {
+  grid-row: 1/2;
+  align-self: center;
 }
-.content {
-  padding: 1rem;
+.img-fluid {
+  grid-column: 2/-1;
 }
-.content.imgBg {
-  background-size: cover;
-  background-position: center center;
+.grid-content {
+  grid-column: 1/3;
+  background: white;
+  padding: 2rem;
+  color: blueviolet;
 }
-
-.contentBlock {
-  position: absolute;
-  margin-top: 20%;
-  margin-left: -10%;
-  background-color: #ffffff;
-  padding: 30px;
-  min-height: auto;
-  width: auto;
-  color: darkviolet;
-  float: left;
+.grid-caption {
+  grid-column: 2/-1;
 }
