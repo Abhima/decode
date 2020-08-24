@@ -7,3 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5.  Runs the app in the development mode.<br />
   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
   Access localhost:3000 on your browser.
+
+
+##For better designs material-ui and react bootstrap has been used in the program.
