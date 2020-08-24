@@ -23,6 +23,12 @@
 .headerTitle {
   text-align: center;
 }
+/**/
+.center-fit {
+  max-width: 100%;
+  max-height: 80vh;
+  margin: auto;
+}
 /*for react-router-dom Link */
 .link {
   color: darkviolet;
